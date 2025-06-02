@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль - Sultan's Delight</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+      body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+        display: flex;
+        flex-direction: column;
+      }
+      .profile-card {
+        box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+        border-radius: 1.5rem;
+        padding: 2.5rem 2rem;
+        background: #fff;
+        width: 80vw;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .profile-avatar {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid #0d6efd;
+        margin-bottom: 1.5rem;
+        background: #e0e7ef;
+      }
+      .profile-name {
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+      .profile-email {
+        color: #6c757d;
+        margin-bottom: 2rem;
+      }
+      .logout-btn {
+        padding: 0.75rem 2rem;
+        font-size: 1.1rem;
+        border-radius: 2rem;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="content restarauntsite/ottoman-sultan-game-logo-simple-mobile-game-logo-vector-illustration_969863-21853.png" alt="Sultan's Delight" width="40" height="40" class="d-inline-block align-top me-2">
+                Sultan's Delight
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Меню</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation.html">Бронирование</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reviews.html">Отзывы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+                <a href="profile.html" class="profile-btn btn btn-outline-light" style="display: block;">
+                  Мой профиль
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="d-flex align-items-center justify-content-center flex-grow-1" style="min-height: 100vh;">
+        <div class="profile-card text-center mt-5 mb-5">
+            <img src="https://ui-avatars.com/api/?name=User&background=0d6efd&color=fff&size=100" alt="Avatar" class="profile-avatar" id="profile-avatar">
+            <div class="profile-name" id="profile-name">Имя пользователя</div>
+            <div class="profile-email" id="profile-email">Email</div>
+            <button id="logout-btn" class="btn btn-danger logout-btn mt-3"><i class="fas fa-sign-out-alt me-2"></i>Выйти</button>
+        </div>
+    </main>
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="index.html" class="d-flex align-items-center text-decoration-none text-white">
+                        <img src="content restarauntsite/ottoman-sultan-game-logo-simple-mobile-game-logo-vector-illustration_969863-21853.png" alt="Sultan's Delight" width="40" height="40" class="me-2">
+                        <span class="fs-5">Sultan's Delight</span>
+                    </a>
+                    <p class="mt-2">Искусство гастрономии с 2010 года</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2023 Sultan's Delight. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const user = JSON.parse(localStorage.getItem('currentUser'));
+        if (user) {
+          document.getElementById('profile-name').textContent = user.name || 'Имя пользователя';
+          document.getElementById('profile-email').textContent = user.email || '';
+          // Set avatar with initials
+          const avatarUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(user.name || user.email || 'User')}&background=0d6efd&color=fff&size=100`;
+          document.getElementById('profile-avatar').src = avatarUrl;
+        } else {
+          window.location.href = 'login.html';
+        }
+        document.getElementById('logout-btn').addEventListener('click', function() {
+          localStorage.removeItem('currentUser');
+          window.location.href = 'index.html';
+        });
+      });
+    </script>
+</body>
+</html> 

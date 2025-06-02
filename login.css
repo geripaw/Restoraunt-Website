@@ -1,0 +1,40 @@
+.login-section {
+    padding: 5rem 0;
+    background-color: var(--light-color);
+}
+
+.login-form h2,
+.register-form h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.form-footer {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.form-footer a {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    color: var(--primary-color);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .login-section {
+        padding: 3rem 0;
+    }
+    
+    .card-body {
+        padding: 1.5rem;
+    }
+}

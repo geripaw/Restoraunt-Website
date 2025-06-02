@@ -1,0 +1,58 @@
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('content restarauntsite/restaurant-hall-with-leather-armchairs-french-windows_140725-8445.png') no-repeat center center;
+    background-size: cover;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.btn-primary {
+    background-color: #8B4513;
+    border-color: #8B4513;
+}
+
+.btn-primary:hover {
+    background-color: #A0522D;
+    border-color: #A0522D;
+}
+
+.btn-outline-primary {
+    color: #8B4513;
+    border-color: #8B4513;
+}
+
+.btn-outline-primary:hover {
+    background-color: #8B4513;
+    border-color: #8B4513;
+}
+
+.navbar-dark {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.py-6 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.menu-item {
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.review {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+}
+
+.review:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
