@@ -33,7 +33,7 @@ In "Git Bash"
 
 git clone https://github.com/geripaw/Restoraunt-Website.git
 
-3. Open (https://index.html) in your browser
+Open (https://index.html) in your browser
 
 
 ## 🧩 Project Structure
