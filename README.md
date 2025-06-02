@@ -38,30 +38,51 @@ git clone https://github.com/geripaw/Restoraunt-Website.git
 
 restaurant-website/
 ├── css/
+
 │   ├── style.css       # Main styles
+
 │   └── responsive.css  # Media queries
+
 ├── js/
+
 │   ├── main.js         # Core functionality
+
 │   └── reservation.js  # Booking system
+
 ├── images/             # All visual assets
+
 ├── index.html          # Homepage
+
 ├── menu.html           # Menu page
+
 └── contact.html        # Contact page
 
 
 ## 📝 Code Highlights
+
 // Sample from reservation.js
+
 function validateForm() {
+
   // Ensures all required fields are filled
+  
   if(name.value === '' || email.value === '') {
+  
     showError('Please fill all required fields');
+    
     return false;
+    
   }
+  
   return true;
+  
 }
+
 
 ## 📧 Contact
 Geripaw - geripaw08@gmail.com  
+
 Project Link: (https://github.com/geripaw/Restoraunt-Website)
+
 Website Link: (https://geripaw.github.io/Restoraunt-Website/)
 
