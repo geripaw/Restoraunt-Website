@@ -28,9 +28,12 @@ A modern, responsive website for a restaurant featuring menu display, table rese
 
 ## 🚀 Installation
 1. Clone the repository:
+
 In "Git Bash"
+
 git clone https://github.com/geripaw/Restoraunt-Website.git
-2. Open (https://index.html) in your browser
+
+3. Open (https://index.html) in your browser
 
 
 ## 🧩 Project Structure
