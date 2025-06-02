@@ -35,35 +35,30 @@ git clone https://github.com/geripaw/Restoraunt-Website.git
 
 ## 🧩 Project Structure
 
-_____________________________________________________________
-|    restaurant-website                                     |
-|    ├── css                                                |
-|    │   ├── style.css       # Main styles                  |
-|    │   └── responsive.css  # Media queries                |
-|    ├── js                                                 |
-|    │   ├── main.js         # Core functionality           |
-|    │   └── reservation.js  # Booking system               |
-|    ├── images              # All visual assets            | 
-|    ├── index.html          # Homepage                     |
-|    ├── menu.html           # Menu page                    |
-|    └── contact.html        # Contact page                 |
-_____________________________________________________________
+
+restaurant-website/
+├── css/
+│   ├── style.css       # Main styles
+│   └── responsive.css  # Media queries
+├── js/
+│   ├── main.js         # Core functionality
+│   └── reservation.js  # Booking system
+├── images/             # All visual assets
+├── index.html          # Homepage
+├── menu.html           # Menu page
+└── contact.html        # Contact page
 
 
 ## 📝 Code Highlights
-javascript
 // Sample from reservation.js
-_____________________________________________________________
-|   function validateForm() {                               |
-|    // Ensures all required fields are filled              |
-|     if(name.value === '' || email.value === '') {         |
-|       showError('Please fill all required fields');       |
-|       return false;                                       |
-|     }                                                     |
-|     return true;                                          |
-|   }                                                       |
-_____________________________________________________________
-
+function validateForm() {
+  // Ensures all required fields are filled
+  if(name.value === '' || email.value === '') {
+    showError('Please fill all required fields');
+    return false;
+  }
+  return true;
+}
 
 ## 📧 Contact
 Geripaw - geripaw08@gmail.com  
