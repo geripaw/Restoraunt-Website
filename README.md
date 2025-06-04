@@ -15,7 +15,7 @@ A modern, responsive website for a restaurant featuring menu display, table rese
 
 ## 🛠 Technologies Used
 - Frontend: HTML5, CSS3, JavaScript
-- Styling: Flexbox, CSS Grid, Animations, BoosTrap
+- Styling: Flexbox, CSS Grid, Animations, BootsTrap
 - Map Integration: Google Maps API
 - Form Handling: Custom JavaScript validation
 
