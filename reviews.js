@@ -188,7 +188,7 @@ $(document).ready(function() {
                 showAlert('Отзыв успешно обновлен!', 'success');
                 
                 // Воспроизведение звука успешного обновления
-                const successSound = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3');
+                const successSound = new Audio('zvuk.mp3');
                 successSound.play();
             }
             editingReviewId = null;
