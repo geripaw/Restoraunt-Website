@@ -210,7 +210,7 @@ $(document).ready(function() {
             showAlert('Спасибо за ваш отзыв!', 'success');
             
             // Воспроизведение звука успешной отправки
-            const successSound = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3');
+            const successSound = new Audio('zvuk.mp3');
             successSound.play();
         }
         
